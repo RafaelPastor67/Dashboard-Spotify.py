@@ -1,4 +1,3 @@
-import keyword
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -111,10 +110,11 @@ df_playlists = df_filtrado.sort_values(by = 'in_spotify_playlists')
 nome_musica2 = df_playlists['track_name']
 spotify_playlist = df_playlists['in_spotify_playlists']
  #############################################
-soma_músicas100 = len(df_filtrado)
+
+soma_músicas100 = len(df_filtrado)# Verifica se o dataset esta vazio senão da erro de dividir por zero
 if soma_músicas100 == 0:
     st.write('Nenhuma música encontrada')
-else:
+else: # Se não estiver vazio pode executar a conta que modifica o gráfico de Donut
     porcentagem = 812 / soma_músicas100 * 100
     #############################################
 
@@ -192,9 +192,9 @@ with col2:
         a=make_donut(b, 'Músicas ')#chamando a função do grafico donut
         cols1 = st.columns((3,4,3))
         with cols1[1]:
-
             st.title('Músicas')
             st.altair_chart(a)#imprimindo o donut
+
     
 
 

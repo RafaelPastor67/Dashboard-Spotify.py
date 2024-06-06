@@ -1,53 +1,29 @@
+# Dashboard de Músicas do Spotify 🎶
+Este repositório foi criado como desafio do Projeto Desenvolve, ele contém diversos dados sobre músicas do Spotify. Sendo possível filtrar por Ano e Mês de lançamento e também por Artista.
 
-Criar um dashboard interativo para explorar e visualizar dados de músicas do Spotify utilizando as bibliotecas Streamlit, Altair, Plotly e Pandas.
+## Instruções de uso
 
-## Dados
+Este projeto foi desenvolvido na versão 3.10.6 do Python. Para executar basta executar o seguninte comando no console do arquivo `Dashboard.py`: 
+```
+streamlit run Dashboards.py
+```
+## Bibliotecas necessárias
+- Streamlit, version 1.35.0
+- Pandas, Version: 2.2.2
+- Altair Version: 5.3.0
+- Plotly Version: 5.22.0
+ 
+## Dataset
+`spotify.csv` É o arquivo de dataset onde contém todos os dados sobre as músicas. os dados são:
 
-O conjunto de dados utilizado é o "Spotify Music", disponível no Kaggle: https://www.kaggle.com/datasets/mrmorj/dataset-of-songs-in-spotify
-
-## Bibliotecas:
-
-Streamlit: Para criar o aplicativo web interativo.
-Altair: Para criar visualizações de dados estatísticos interativas.
-Plotly: Para criar gráficos interativos mais complexos.
-Pandas: Para manipular e analisar os dados.
-Funcionalidades:
-
-Carregar e pré-processar o conjunto de dados do Spotify.
-Explorar as características das músicas, como gênero, artista, data de lançamento, popularidade e duração.
-Visualizar a distribuição das músicas por gênero, artista, ano de lançamento e popularidade.
-Analisar a relação entre popularidade e outras características das músicas, como duração e ano de lançamento.
-Criar gráficos interativos personalizados para explorar os dados de forma mais aprofundada.
-Requisitos:
-
-Python instalado
-Bibliotecas Streamlit, Altair, Plotly e Pandas instaladas
-Conjunto de dados "Spotify Music" baixado do Kaggle
-Instruções:
-
-Clone este repositório ou baixe o código-fonte.
-Instale as bibliotecas necessárias:
-Bash
-pip install streamlit altair plotly pandas
-Use o código com cuidado.
-content_copy
-Carregue o conjunto de dados "Spotify Music" em uma pasta local.
-Execute o script dashboard.py no terminal:
-Bash
-python dashboard.py
-Use o código com cuidado.
-content_copy
-Acesse o dashboard em seu navegador web: https://localhost8000.com/
-Exemplo de visualização:
-
-[Imagem de exemplo de visualização do dashboard]
-
-## Observações:
-
-Este é um exemplo básico de um dashboard. Você pode personalizar o código para criar visualizações e análises específicas para suas necessidades.
-Certifique-se de ter baixado o conjunto de dados "Spotify Music" do Kaggle antes de executar o script.
-Para mais informações sobre as bibliotecas utilizadas, consulte a documentação oficial:
-Streamlit: https://docs.streamlit.io/
-Altair: https://github.com/vega/altair
-Plotly: https://plotly.com/python/
-Pandas: https://pandas.pydata.org/docs/
+- Nome da música 
+- Nome do artista
+- Playlists e paradas do Spotify
+- Streams
+- Presença da Apple Music
+- Presença do Deezer
+- Gráficos Shazam
+- Vários recursos de áudios
+ 
+ O dataset foi retirado do site Kaggle: https://www.kaggle.com/datasets/arnavvvvv/spotify-music
+ mas alguns dados precisaram ser modificados
