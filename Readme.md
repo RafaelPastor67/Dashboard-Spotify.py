@@ -3,7 +3,7 @@ Este repositório foi criado como desafio do Projeto Desenvolve, ele contém div
 
 ## Instruções de uso
 
-Este projeto foi desenvolvido na versão 3.10.6 do Python. Para executar basta executar o seguninte comando no console do arquivo `Dashboard.py`: 
+Este projeto foi desenvolvido na versão 3.10.6 do Python. Para executar basta executar o seguinte comando no console do arquivo `Dashboard.py`: 
 ```
 streamlit run Dashboards.py
 ```
